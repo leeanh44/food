@@ -1,0 +1,941 @@
+@font-face {
+    font-family: 'proxima_novalight';
+    src: url('fonts/proximanovalight-webfont.eot');
+    src: url('fonts/proximanovalight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanovalight-webfont.woff2') format('woff2'),
+         url('fonts/proximanovalight-webfont.woff') format('woff'),
+         url('fonts/proximanovalight-webfont.ttf') format('truetype'),
+         url('fonts/proximanovalight-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('fonts/proximanova-bold-webfont.eot');
+    src: url('fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/proximanova-bold-webfont.woff2') format('woff2'),
+         url('fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* ----------------------------------------  COMMON ---------------------------------------- */
+body{
+    background-image: url('images/bgBody.png');
+    -webkit-background-image: url('images/bgBody.png');
+    -moz-background-image: url('images/bgBody.png');
+    -o-background-image: url('images/bgBody.png');
+    
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* --------------------------------------  HEADER TOP -------------------------------------- */
+.headerTop{
+    background-color: #202017;
+    height: auto;
+}
+.headerInner{
+    width: 100%;    
+}
+#titlePart{
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 6px;
+}
+#iconSocialPart{
+    text-align: right;
+    height: 10%;
+}
+#iconSocialPart a{
+    color: #202017;
+    font-size: 0.9em;
+}
+/** MAIN - CONTENT */
+.mainContent{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    opacity: 1;
+    height: auto;
+}
+/** SLIDE */
+.slideContainer{
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.slidePart{
+    position: relative;
+}
+.slidePart img{
+    border-radius: 25px;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+/** BUTTON TRANSFORM SLIDE */
+.slidePaper{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+.slidePaper ul{
+    text-align: center;
+    line-height: 10px;
+}
+.slidePaper ul li{
+    text-decoration: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #bee2e1;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 2px;
+}
+.slidePaper ul li:hover{
+    background: #fff;
+}
+.slidePaper ul .focus{
+    background: #fff;
+}
+/** CONTENT BANNER */
+.contentSlide{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    margin-left: 3%;
+}
+.bannerInner{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+}
+.bannerPart h3{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 72px;
+    color: #ffffff;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.bannerPart #description{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #f2f2f2;
+    font-weight: 100;
+    font-style: italic;
+}
+.bannerPart a{
+    width: 20%;
+    height: 10%;
+    margin: 10px;
+    display: inline-block;
+    font-size: 180%;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 180%;
+    text-decoration: none;
+    background: #bf1a0c;
+    text-align: center;
+}
+.bannerPart a:hover{
+    background: #ffffff;
+    color: #bf1a0c;
+    font-weight: bold;
+}
+/** FORM */
+.formPart{
+    display: inline-block;
+}
+.formPart form{
+    text-align: center;
+}
+.formPart .formAll{
+    text-align: right;
+}
+/** CONTENT */
+.sidebar {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.titleLeft h3{
+    font-family: 'Roboto', sans-serif;
+    color: #f00;
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+    color: rgb(18, 93, 112);
+    line-height: 1.681;
+    text-align: center;
+    text-shadow: 0px 6px 18.6px rgba(255, 234, 0, 0.004);
+    font-weight: 800;
+    margin-top: 12px;
+}
+.listCat{
+    width: 100%;
+}
+.listCat ul li{
+    -moz-border: 1px solid #e8e8e8;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright:20px;
+    
+    -webkit-border: 1px solid #e8e8e8;
+    -webkit-border-radius-topright: 20px;
+    -webkit-border-radius-bottomright:20px;
+    
+    width: 100%;
+    padding: 4px;
+    margin-left: 2px;
+    border-bottom: 1px dotted #ffd297;
+    color: #f3a290;
+    margin-top: 10px;
+    padding-left: 20px;
+    
+    border-width: 1px;
+    -webkit-border-width: 1px;
+    -moz-border-width: 1px;
+    
+    border-color: rgb(109, 207, 246);
+    -webkit-border-color: rgb(109, 207, 246);
+    -moz-border-color: rgb(109, 207, 246);
+    
+    border-style: solid;
+    -webkit-border-style: solid;
+    -moz-border-style: solid;
+    
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+.listCat ul li:hover{
+    color: #cc1e00;
+    background-color: #a7d2ff;
+    transform:translateX(20px);
+    -webkit-transform:translateX(20px);
+    -moz-transform:translateX(20px);
+    -o-transform:translateX(20px);
+    
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s; 
+    -moz-transition-duration: 0.8s; 
+    -o-transition-duration: 0.8s;
+     
+    text-shadow: 0px 0px 10px #ddd2c6;
+}
+.titleDetail h3{
+    color: rgb(21, 137, 166);
+    font-weight: bold;
+}
+/** BOOK LIST */
+.listBook{
+    width: 98%;
+    margin-left: 4px;
+}
+#book{
+    width:180px;
+    height: 320px;
+    margin-right: 20px;    
+}
+#book .row img{
+    border-radius:10px;
+    margin-right:10px;
+    width: 160px;
+    height: 230px;
+    margin-bottom: 10px;
+}
+#book .row img:hover{
+    transform: scale(1.1);
+    -webkit-transform:scale(1.1); 
+    -moz-transform:scale(1.1); 
+    -o-transform:scale(1.1); 
+
+    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s; 
+    -moz-transition-duration: 0.8s; 
+    -o-transition-duration: 0.8s; 
+
+    box-shadow:0px 0px 30px white; 
+    -webkit-box-shadow:0px 0px 30px white; 
+    -moz-box-shadow:0px 0px 30px white; 
+    opacity: 1;
+}
+#book .nameBook{    
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+    color: rgb(3, 135, 197);
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#book .author{
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: rgb(3, 135, 197);
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-align: left;
+}
+#book .inforBook{
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+#book .tagBook {
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: rgb(0, 0, 0);
+    line-height: 1.0;
+    text-align: center;
+    margin-left: 10px;
+}
+#book .typeBook {
+    font-size: 14px;
+    font-family: "Source Sans Pro";
+    color: rgb(3, 135, 197);
+    line-height: 1.0;
+    text-align: center;
+}    
+#book .addButton{
+    width: 50%;
+    text-align: right;
+    background-color: #f3a290;
+    color: White;
+}
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+}
+.paginationBook{
+    margin: 0 auto;
+    text-align: center;
+}
+.footerBook{
+    background: #ffffff; 
+    background: -webkit-linear-gradient(#ffffff, #d9d5d6); 
+    background: -o-linear-gradient(#ffffff, #d9d5d6); 
+    background: -moz-linear-gradient(#ffffff, #d9d5d6); 
+    background: linear-gradient(#ffffff, #d9d5d6);
+    color: white;
+}
+
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- FORM-LOGIN ---- */
+#loginPage .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#loginPage .close:hover,#loginPage .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/**
+    ----
+        ----
+            ---- CONTENT FORM ----*/
+#loginPage .modal-content {
+    background:linear-gradient(top,#06b0ca,#6ec9dc);
+    background: -webkit-linear-gradient(top,#06b0ca,#6ec9dc);
+    background: -moz-linear-gradient(top,#06b0ca,#6ec9dc);
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+#loginPage .container{
+    width: 80%;
+    margin: 0 auto;
+}
+#loginPage .container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(109, 207, 246);
+    box-sizing: border-box;
+}
+
+#loginPage .container input[type=checkbox]{
+    margin-top: 5px;
+}
+/* Set a style for all buttons */
+#loginPage .container button {
+    background-color: rgb(109, 207, 246);
+    color: white;
+    padding: 6px 6px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+    background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+    background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #019db4;
+}
+#loginPage .container span.psw {
+    float: right;
+    padding-top: 16px;
+    color: white;
+}
+
+#loginPage .container .cancelbtn {
+    width: auto;
+    padding: 6px 20px;
+}
+
+#loginPage .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- FORM-LOGIN ---- */
+#registerPage .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#registerPage .close:hover,#registerPage .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/**
+    ----
+        ----
+            ---- CONTENT FORM ----*/
+#registerPage .form-horizontal {
+    background:linear-gradient(top,#06b0ca,#6ec9dc);
+    background: -webkit-linear-gradient(top,#06b0ca,#6ec9dc);
+    background: -moz-linear-gradient(top,#06b0ca,#6ec9dc);
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- PROFILE ---- */
+#profile{
+    margin-top: 10px;
+}
+#profile .profileInner{
+    border-width: 1px;
+    border-color: rgb(183, 183, 183);
+    border-style: solid;
+    text-align: center;
+    padding-top: 5px;
+}
+#profile .inforAuthor{
+    text-align: left;
+}
+#profile .info{
+    border-width: 1px;
+    border-color: rgb(183, 183, 183);
+    border-style: solid;
+    background-color: rgb(243, 243, 243);
+    width: 86%;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 5px;
+}
+#profile .icon{
+    font-size: 20px;
+    color: rgb(3, 135, 197);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+}
+#profile .detail {
+    font-style: italic;
+    font-family: 'Roboto'; 
+    font-weight: 400; 
+    color: rgb(3, 135, 197);
+    font-size: 16px;
+}
+
+#profile .myBookInner{
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+#profile .myBookInner h3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #ff1f00;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#profile .myBookInner .ab{
+    margin-top: -10px;
+    margin-left: 15px;
+}
+
+#profile .myBookInner .ab .a{
+    color: rgb(183, 183, 183);
+    font-style: italic;
+    font-size: 16px;
+}
+
+#profile .myBookInner .ab .b{
+    color: #4681da;
+}
+
+#profile .myBookInner .abc{
+    margin-bottom: 10px;
+    margin-right: 10px;        
+}
+
+#profile .myBookInner .content{
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- DETAIL ---- */
+#detail .detailInner{
+    text-align: center;
+    border-width: 1px;    
+    padding-top: 5px;
+}
+
+#detail .detailContent{
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+#detail .detailContent h3{
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #d0021b;
+}
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- POST BOOK ---- */
+#postBook .modal-content {
+    background-color: #f7f7f7;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+}
+
+#postBook .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    margin-top: 10px;
+    color: rgb(3, 135, 197);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#postBook .close:hover,#loginPage .close:focus {
+    color: #f00;
+    cursor: pointer;
+}
+
+
+#postBook .modal-content h3{
+    color: #2c91c5; 
+    margin-left: 65px; 
+    font-family: 'Roboto'; 
+    font-weight: bold;
+}
+#postBook .modal-content .line{
+    border-bottom: 2px solid #ececec;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#postBook .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#postBook .container .selectBox{
+}
+
+#postBook .container input[type=text], input[type=password] {
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f7f7f7;
+    box-sizing: border-box;
+}
+
+#postBook .container input[type=checkbox]{
+    margin-top: 5px;
+}
+/* Set a style for all buttons */
+#postBook .container button {
+    background-color: rgb(109, 207, 246);
+    color: white;
+    padding: 6px 6px;
+    margin: 8px 0;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+    background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+    background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+}
+
+#postBook .container input[type=button]{
+    background-color: rgb(109, 207, 246);
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+    background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+    background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+}
+
+#postBook .container .img img{
+    margin-left: 80px;
+    margin-top: 15px;
+    width: 20%;
+    height: 20%;
+}
+
+#postBook .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- UPDATE POST BOOK ---- */
+#updateBook .modal-content {
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+    
+    background: -webkit-linear-gradient(#ffffff, #d9d5d6); 
+    background: -o-linear-gradient(#ffffff, #d9d5d6); 
+    background: -moz-linear-gradient(#ffffff, #d9d5d6); 
+    background: linear-gradient(#ffffff, #d9d5d6);
+}
+
+#updateBook .close {
+    margin-right: 15px;
+    top: 0;
+    margin-top: 10px;
+    color: rgb(3, 135, 197);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#updateBook .close:hover,#loginPage .close:focus {
+    color: #f00;
+    cursor: pointer;
+}
+
+
+#updateBook .modal-content h3{
+    color: #2c91c5; 
+    margin-left: 65px; 
+    font-family: 'Roboto'; 
+    font-weight: bold;
+}
+#updateBook .modal-content .line{
+    border-bottom: 2px solid #ececec;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#updateBook .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#updateBook .container .selectBox{
+}
+
+#updateBook .container input[type=text]{
+    width: 100%;
+    padding: 6px 6px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f7f7f7;
+    box-sizing: border-box;
+    border: 1px solid #feffda;
+    border-radius: 10px;
+}
+
+#updateBook .container input[type=checkbox]{
+    margin-top: 5px;
+}
+/* Set a style for all buttons */
+#updateBook .container button {
+    background-color: rgb(109, 207, 246);
+    color: white;
+    padding: 6px 6px;
+    margin: 8px 0;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+    background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+    background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+}
+
+#updateBook .container input[type=button]{
+    background-color: rgb(109, 207, 246);
+    
+    background: linear-gradient(top,#f2f6f7,#979394);
+    background: -webkit-linear-gradient(top,#f2f6f7,#979394);
+    background: -moz-linear-gradient(top,#f2f6f7,#979394);
+    
+    border-radius: 5px;
+    border: 1px solid #f7f7f7;
+}
+
+#updateBook .container .img img{
+    margin-left: 80px;
+    margin-top: 15px;
+    width: 20%;
+    height: 20%;
+}
+
+#updateBook .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+.detail .updateBook form button.update{
+
+    background-color: royalblue;
+    color: #f5f5f5;
+    width: 100%;
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 40px;
+}
+
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/** =======> BUTTON UPDATE INFORMATION */
+.updateAuthor{
+    text-align: center;
+}
+.updateAuthor input[type=submit]{
+    height: 37px; 
+    margin-top: 10px; 
+    width: 200px; 
+    border-radius: 15px; 
+    background-color: #ff1f00; 
+    color: white; 
+    font-weight: bold;
+}
+.updateAuthor input[type=submit]:hover{
+    color: #ff1f00;
+    background-color:white;
+}
+
+
+
+/**                                             ----
+    ----                                    ----
+        ----                            ----
+            ----                    ----
+                ---- EDIT USER ---- */
+#editUser .modal-content {
+    background-color: #f7f7f7;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 40%; 
+    text-align: center;
+}
+
+#editUser .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    margin-top: 10px;
+    color: rgb(3, 135, 197);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#editUser .close:hover,#editUser .close:focus {
+    color: #f00;
+    cursor: pointer;
+}
+
+#editUser .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#editUser .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
